@@ -76,7 +76,7 @@
           localStorage.setItem(`textareaValue-${index}`, textareaValue);
       function appendSavedData () {
           const savedData = localStorage.getItem(`textareaValue-${index}`);
-          const targetElement = $('.description'); // Replace 'targetElement' with the ID or selector of the element where you want to append the data
+          const targetElement = $('.description'); 
           targetElement.innerHTML += savedData;
       };
       window.addEventListener('load', appendSavedData);
